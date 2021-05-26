@@ -120,3 +120,21 @@
 		}
   };
 })();
+
+
+
+const baseUrl='https://intnapi.herokuapp.com/';
+
+
+fetch(baseUrl).then(
+  res => {
+    res.json().then(
+      data => {
+        console.log(data);
+		console.log(data[0].name1);
+		console.log(data[1].name1);
+		document.getElementById("faq1").innerText=data[0].name1;
+		document.getElementById("faq2").innerText=data[1].name1;
+	}
+  )}
+)
