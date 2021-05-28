@@ -131,10 +131,11 @@ fetch(baseUrl).then(
     res.json().then(
       data => {
         console.log(data);
-		console.log(data[0].name1);
-		console.log(data[1].name1);
 		document.getElementById("faq1").innerText=data[0].name1;
 		document.getElementById("faq2").innerText=data[1].name1;
+		document.getElementById("faq3").innerText=data[2].name1;
+		document.getElementById("faq4").innerText=data[3].name1;
+		document.getElementById("faq5").innerText=data[4].name1;
 	}
   )}
 )
